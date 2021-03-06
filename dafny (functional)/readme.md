@@ -6,7 +6,7 @@ A functional proof of *leftpad* in Dafny.
 
 ## About Dafny
 
-Dafny is an imperative language supporting specification constructs based on Hoare logic. This means specifications can be coupled together with their implementations and programs are statically verified for total correctness. However, due to undecidability, Dafny may report errors for programs even though they may be correct on every runtime execution. This can be due to quantifiers, nonlinear arithmetic or missing annotations.
+Dafny is an imperative language supporting specification constructs based on Hoare logic. This means specifications can be coupled together with their implementations for programs to be statically verified for total correctness. However, due to undecidability, Dafny may report errors for programs even though they may be correct on every runtime execution. This can be due to quantifiers, nonlinear arithmetic or missing annotations.
 
 ## About the Proof
 
