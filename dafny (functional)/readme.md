@@ -14,7 +14,7 @@ This implementation makes use of recursion and considers two cases.
 
 The base case is when the string already satisfies the required length. If so, then we're done and the string is simply returned.
 
-In the recursive case, the string is concatenated with a single padding character to its left. This padded string is passed as the result string in a recursive call to the method. It is also the only argument that changes recursive call.
+In the recursive case, the string is concatenated with a single padding character to its left. This padded string is passed as the result string in a recursive call to the method. It is also the only argument that changes in each recursive call.
 
 Since we make use of recursion, we need to prove that the function eventually terminates. We do this using the `decreases` clause, stating that `n - |s|` decreases with each recursive call. Dafny then verifies that this value is bounded in that it cannot decrease infinitely. For simpler expressions such as a single integer, Dafny is able to infer the decreasing expression automatically.
 
